@@ -837,5 +837,8 @@ is(
     'transliterate "test" into "TEST"'
 );
 
+##########
+is str('test')->humanize . 'foo', 'Testfoo', 'overload stringification';
+
 done_testing;
 

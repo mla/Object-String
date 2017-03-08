@@ -13,6 +13,7 @@ use List::Util;
 
 use Moo;
 use namespace::clean;
+use overload 'nomethod' => sub { $_[0]->string };
 
 =head1 DESCRIPTION
 
